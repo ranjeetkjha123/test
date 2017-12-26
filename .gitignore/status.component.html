@@ -1,0 +1,35 @@
+<div class="wrapper">
+
+  <div class="wrapstatus">
+    <div class="actonIcon">
+
+    	<div class="btn-group">
+    <button class="btn button-secondary dropdown-toggle pull-right" data-toggle="dropdown">
+       <i class="hpe-icon hpe-user hpe-2x" aria-hidden="true"></i>
+   </button>
+   <ul class="dropdown-menu">
+        <li><a href="#/status">&nbsp; Admin</a></li>
+        <li><a href="#/login" (click)="logout()">&nbsp;Logout</a></li>
+   
+    </ul>
+     </div>
+      </div>
+     <div class="statustxt" >
+
+
+  	 <img [src]="BACKSTATUS" id="statusbackimg" />
+	 <div class="progresstxt" >
+	 <ux-progress-bar class="m-b-md" [value]="value" max="100">
+    <span>{{ value }}%</span>
+    </ux-progress-bar>
+
+<a [routerLink]="['/dashboard']"><button type="button" class="btn btn-primary btn-lg" (click)="randomize()">Dashboard</button></a>
+
+     </div>
+	 </div>
+  	<!-- <img src="ferret_background.png"  width="100%" height="660px">  -->
+
+  </div>
+
+
+</div>

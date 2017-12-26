@@ -1,0 +1,50 @@
+
+<!-- <nav> -->
+  <!-- <a routerLink="/dashboard">Dashboard</a> -->
+  <!-- <a routerLink="/heroes">Heroes</a> -->
+<!-- </nav> -->
+
+<!-- <h2>My Heroes</h2> -->
+
+  <div class="loginpage">
+  <div class="col-xs-12 col-md-8" id="loginpad">
+     <div class="fit">
+  	 <img [src]="LOGO" id="loginimage" />
+	 </div>
+  	<!-- <img src="ferret_background.png"  width="100%" height="660px">  -->
+
+  </div>
+  <div class="col-xs-12 col-md-4" id="loginpad2">
+
+  	    <form role="form" (submit)="login()">
+  	    	<h1>{{ title }}</h1>
+        <div class="form-group">
+            <label class="form-label"></label>
+            <input [(ngModel)]="user.username" type="text" placeholder="username" class="form-control" name="username" id="username"  required=""/>
+        </div>
+        <div class="form-group">
+            <label class="form-label"></label>
+            <input [(ngModel)]="user.password" type="password"  placeholder="password"  class="form-control" name="password" id="password" required=""/>
+        </div>
+        <div class="errorspace">
+           &nbsp;
+           &nbsp;
+        </div>
+        <div class="row">
+           &nbsp;&nbsp;  <span class="text-danger">{{ error }}</span>
+           <span id="err"><small>{{errorMsg}}</small></span>
+
+        </div>
+        <div class="row">
+           &nbsp;
+           &nbsp;
+        </div>
+
+        <div>
+
+            <button class="btn button-accent pull-left btn-lg" type="submit" >Log in
+            </button>
+        </div>
+        </form>
+  </div>
+  </div>

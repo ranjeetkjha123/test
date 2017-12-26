@@ -1,0 +1,45 @@
+
+<my-left-navigation></my-left-navigation> 
+ <div class="page-content page-content-navbar-top-light"> 
+     <my-page-header></my-page-header>
+	 <div class="line-chartstyle">
+   <h1>Line Chart</h1>
+  	
+    <canvas baseChart 
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [legend]="lineChartLegend"
+            [colors]="lineChartColors"
+            chartType="line">
+    </canvas>
+	<br>
+	
+	<h1>Donut Chart</h1>
+	 <canvas baseChart 
+            [datasets]="donutChartData"
+            [labels]="donutChartLabels"
+            [options]="donutChartOptions"
+            [legend]="donutChartLegend"
+            [colors]="donutChartColors"
+            chartType="doughnut">
+    </canvas>
+     <br>
+	<br>
+	 <canvas baseChart 
+            [datasets]="barChartData" 
+            [labels]="barChartLabels" 
+            [options]="barChartOptions" 
+            [legend]="barChartLegend"
+            [colors]="barChartColors" 
+            chartType="bar">
+    </canvas>
+     <br>
+	 <br>
+</div>
+</div>
+ <div class="wrapper-content container-fluid">
+ <!-- <h2>Sample Header</h2> -->
+  <!-- <p>Sample paragraph.</p> -->
+  
+ </div>
